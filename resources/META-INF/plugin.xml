@@ -5,19 +5,19 @@
     <vendor email="195489802@qq.com" url="https://github.com/mifeng925/Kill-Gradle">Jet Bee</vendor>
 
     <description><![CDATA[
-    Kill the Gradle process with one click and stop the build quickly.
-
-    一键杀死Gradle进程，快速停止构建。
+    Kill the Gradle process with one click and stop the build quickly.<br>
+    <br>
+    一键杀死Gradle进程，快速停止构建。<br>
   ]]></description>
 
     <change-notes><![CDATA[
-    Used to kill Gradle with one click
-    This plug-in reference [Easy Gradle] implementation, the main reason is that he does not support Android Studio
-    For Android development partners is very unfriendly
-
-    用于一键杀死Gradle
-    该插件参考【Easy Gradle】实现，主要原因是他不支持 Android Studio
-    对于Android开发的小伙伴十分不友好
+    Used to kill Gradle with one click<br>
+    This plug-in reference [Easy Gradle] implementation, the main reason is that he does not support Android Studio<br>
+    For Android development partners is very unfriendly<br>
+    <br>
+    用于一键杀死Gradle<br>
+    该插件参考【Easy Gradle】实现，主要原因是他不支持 Android Studio<br>
+    对于Android开发的小伙伴十分不友好<br>
   ]]></change-notes>
 
     <!-- please see https://plugins.jetbrains.com/docs/intellij/build-number-ranges.html for description -->

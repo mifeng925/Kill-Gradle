@@ -13,28 +13,26 @@ import java.util.ArrayList
 
 class KillGradleAction: AnAction() {
 
-    private val GITHUB_LINK = "https://github.com/renyuzhuo/easygradle/issues"
-
     override fun actionPerformed(p0: AnActionEvent) {
         var pids = emptyArray<String>()
         try {
             pids = getPids()
         } catch (e: Exception) {
             handleUnexpectedException(e)
-            showNotification("获取进程失败", true)
+            showNotification("Could not get process data!", true)
         }
 
         if (pids.isEmpty()) {
-            showNotification("当前没有Gradle进行在运行!", false)
+            showNotification("No Gradle process is running!", false)
         } else {
             var result = true
             for (pid in pids) {
                 result = result and killProcess(pid)
             }
             if (result) {
-                showNotification("Gradle进程已经杀死", false)
+                showNotification("Gradle was killed!", false)
             } else {
-                showNotification("无法杀死Gradle进程! 检查您的系统是否支持终止进程！", true)
+                showNotification("Could not kill gradle! Check that your system supports killing processes!", true)
             }
         }
     }
@@ -150,11 +148,11 @@ class KillGradleAction: AnAction() {
         }
     }
 
-
     private fun handleUnexpectedException(e: Exception) {
         val message = "期待您的反馈：\n" +
                 "I would really appreciate if you file this issue here:\n" +
-                "$GITHUB_LINK\n"
+                "$ISSUES\n"
+        @Suppress("UnstableApiUsage")
         PluginManager.getLogger().error(message, e)
     }
 
