@@ -1,7 +1,7 @@
 <idea-plugin>
     <id>com.bee.plugin.killGradle</id>
     <name>Kill-Gradle</name>
-    <version>1.0</version>
+    <version>1.1</version>
     <vendor email="195489802@qq.com" url="https://github.com/mifeng925/Kill-Gradle">Jet Bee</vendor>
 
     <description><![CDATA[
